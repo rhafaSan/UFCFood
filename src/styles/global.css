@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 1%;
+}
+
+input:focus{
+    outline: none;
+}
