@@ -20,6 +20,4 @@ function watchRegister(e){
     }else{
         window.location.href = "../login/index.html"
     }
-
-
 }
