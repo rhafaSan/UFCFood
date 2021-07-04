@@ -19,3 +19,13 @@ input{
 input:focus{
     outline: none;
 }
+
+select{
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 1.5%;
+}
+
+slect:focus{
+    outline: none;
+}
