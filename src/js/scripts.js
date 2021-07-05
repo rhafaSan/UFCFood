@@ -8,6 +8,16 @@ function goToDashboard(e){
     window.location.href = "../dashboard/dashboard.html"
 }
 
+function goToRating(e){
+    e.preventDefault();
+    window.location.href = "../rating/rating.html"
+}
+
+function goToLogout(e){
+    e.preventDefault();
+    window.location.href = "../login/index.html"
+}
+
 function watchRegister(e){
     // e.preventDefault()
     const form = document.forms.register_form;
