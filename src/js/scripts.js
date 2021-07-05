@@ -1,21 +1,26 @@
 function goToRegister(e){
     e.preventDefault();
-    window.location.href = "../register/register.html"
+    window.location.href = "../register/register.html";
 }
 
 function goToDashboard(e){
     e.preventDefault();
-    window.location.href = "../dashboard/dashboard.html"
+    window.location.href = "../dashboard/dashboard.html";
 }
 
 function goToRating(e){
     e.preventDefault();
-    window.location.href = "../rating/rating.html"
+    window.location.href = "../rating/rating.html";
 }
 
 function goToLogout(e){
     e.preventDefault();
-    window.location.href = "../login/index.html"
+    window.location.href = "../login/index.html";
+}
+
+function goToDiaryCard(e){
+    e.preventDefault();
+    window.location.href = "../register-card/diary-card.html";
 }
 
 function watchRegister(e){
