@@ -24,20 +24,43 @@ function goToDiaryCard(e){
 }
 
 function watchRegister(e){
-    // e.preventDefault()
+    e.preventDefault();
     const form = document.forms.register_form;
-    form.addEventListener('submit', (e) => {
-        e.preventDefault()
-    })
+    
     const { username } = form;
     var senha = document.getElementById('password');
-    console.log(senha.value.length)
-
+    var confirmeSenha = document.getElementById('confirm_password');
+    
     if(username.value.length < 4){
         window.alert('Nome de usuário precisa ser maior que 4 digítos')
     }else if(senha.value.length <= 5){
         window.alert('A senha precisa ser maior ou igual a 6 dígitos')
+    }else if(confirmeSenha.value != senha.value){
+        window.alert('As senhas não coincidem!')
     }else{
         window.location.href = "../login/index.html"
     }
 }
+
+
+function showPassword(){
+    var senha = document.getElementById('password');
+    
+
+    if(senha.type === 'password'){
+        senha.type = "text";
+    }else{
+        senha.type = 'password'
+    }
+}
+function showConfirmePassword(){
+    var confirmeSenha = document.getElementById('confirm_password');
+    
+
+    if(confirmeSenha.type === 'password'){
+        confirmeSenha.type = "text";
+    }else{
+        confirmeSenha.type = 'password'
+    }
+}
+
