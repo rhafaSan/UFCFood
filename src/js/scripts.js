@@ -8,7 +8,6 @@ function goToDashboard(e){
     window.location.href = "../dashboard/dashboard.html"
 }
 
-
 function watchRegister(e){
     // e.preventDefault()
     const form = document.forms.register_form;
@@ -26,6 +25,4 @@ function watchRegister(e){
     }else{
         window.location.href = "../login/index.html"
     }
-
-
 }

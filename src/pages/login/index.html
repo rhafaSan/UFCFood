@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="../../styles/index.css">
     <link rel="stylesheet" href="../../styles/global.css">
     <script src="../../js/scripts.js"></script>
+    <script src="../../js/login.js"></script>
     <title>UFCFood</title>
 </head>
 <body>
     <main class="main-body">
         <div class="center-div">
             <p>Bem vindo (a) ao UFC Food</p>
-            <form action="">
+            <form action="" name="login_form">
                 <div class="form-div">
                     <label for="username">Nome de usuário:</label>
                     <input type="text" name="username" id="username" required>
 
                     <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <div class="button-div">
-                    <button type="submit" class="login-btn">Entrar</button>
+                    <button type="submit" class="login-btn" onclick="validateLogin(event)">Entrar</button>
                     <button class="register-btn" onclick="goToRegister(event) ">Cadastrar</button>
                     
                 </div>
