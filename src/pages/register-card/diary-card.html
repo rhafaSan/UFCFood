@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../js/scripts.js"></script>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/register-card.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <title>UFCFood</title>
+</head>
+<body>
+    <main class="main-body">
+        <div class="center-div">
+            <p>Cadastro de cardápio</p>
+            <span>Cadastre aqui o cardápio do dia</span>
+            <form action="goToDashboard(event) " name="register_card_form">
+                <div class="form-div">
+                    <label for="protein_red">Carne vermelha:</label>
+
+                    <select name="protein_red" id="protein_red" required>
+                        <option value="default" selected hidden> Selecione uma opção de proteína</option>
+                        <option value="chopped-meat">Picadinho de Carne</option>
+                        <option value="meat-ball">Almôndega</option>
+                    </select>
+
+                    <label for="protein_white">Carne branca:</label>
+                    <select name="protein_white" id="protein_white" required>
+                        <option value="default" selected hidden> Selecione uma opção de proteína</option>
+                        <option value="chicken">Frango a passarinho</option>
+                        <option value="fish">Filé de peixe</option>
+                    </select>
+
+                    <label for="protein_vegetarian">Proteína vegetariana:</label>
+                    
+                    <select name="protein_vegetarian" id="protein_vegetarian" required>
+                        <option value="default" selected hidden> Selecione uma opção de proteína</option>
+                        <option value="hamburguer-lentil">hamburguer-de-lentilha</option>
+                        <option value="meat-ball">Almôndega de soja</option>
+                    </select>
+                    <label for="accompaniments">Acompanhamentos</label>
+                    <select name="accompaniments" id="accompaniments" required>
+                        <option value="default" selected hidden> Selecione uma opção de acompanhamento</option>
+                        <option value="rice">Arroz</option>
+                        <option value="bean">Feijão</option>
+                        <option value="noodle">Macarrão</option>
+                    </select>
+                    <select name="accompaniments" id="accompaniments" required>
+                        <option value="default" selected hidden> Selecione uma opção de acompanhamento</option>
+                        <option value="rice">Arroz</option>
+                        <option value="bean">Feijão</option>
+                        <option value="noodle">Macarrão</option>
+                    </select>
+
+                    <label for="salad">Salada:</label>
+                    <select name="salad" id="salad" required>
+                        <option value="default" selected hidden> Selecione uma opção de salada</option>
+                        <option value="raw-salad">Salada crua</option>
+                        <option value="vegetable-salad">Salada de maionese</option>
+                    </select>
+                    <label for="fruit">Fruta:</label>
+                    <select name="fruit" id="fruit" required>
+                        <option value="default" selected hidden> Selecione uma opção de fruta</option>
+                        <option value="banana">Banana</option>
+                        <option value="apple">Maçã</option>
+                        <option value="orange">Laranja</option>
+                    </select>
+
+                    <label for="date">Data de disponibilização:</label>
+                    <input type="date" name="date" id="date">
+
+                  
+                </div>
+                <div class="button-div">
+                    <button type="submit" class="login-btn" >Finalizar cadastro</button>
+                    <button type="submit" class="rating-btn" onclick="goToDashboard(event)">Cancelar</button>
+                </div>
+                
+               
+                
+            </form>
+        </div>
+    </main>   
+</body>
+</html>
