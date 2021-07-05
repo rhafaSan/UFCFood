@@ -63,12 +63,18 @@
 
 .logo {
     width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
+}
+
+.logo-link {
+    text-decoration: none;
     color: #ffffff;
     font-size: 15px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .nav-bar {
