@@ -7,7 +7,6 @@
     <script src="../../js/scripts.js"></script>
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/register.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <title>UFCFood</title>
 </head>
 <body>
@@ -18,13 +17,20 @@
             <form action="" name="register_form">
                 <div class="form-div">
                     <label for="username">Nome de usuário:</label>
-                    <input type="text" name="username" id="username" minlength="4" required>
+                    <input type="text" name="username" id="username" minlength="4" required oninvalid="this.setCustomValidity('Nome de usuário menor que o permitido')">
 
                     <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password" minlength="6" maxlength="12" required>
+                    <div class="input-div">
+                        <input type="password" name="password" id="password" minlength="6" maxlength="12" required> 
+                        <button class="show-btn" onclick="showPassword()" type="button" >Mostrar senha</button>
+                    </div>
                     
                     <label for="password">Confirme a senha:</label>
-                    <input type="password" name="password" id="password" minlength="6" maxlength="12" required>
+                    <div class="input-div">
+                        <input type="password" name="confirm_password" id="confirm_password" minlength="6" maxlength="12" required>
+                        <button class="show-btn" onclick="showConfirmePassword()" type="button" >Mostrar senha</button>
+                    </div>
+
                 </div>
                 <div class="button-div">
                     <button type="submit" class="login-btn" onclick="watchRegister(event)">Finalizar cadastro</button>
