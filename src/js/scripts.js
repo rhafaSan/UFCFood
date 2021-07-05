@@ -3,6 +3,11 @@ function goToRegister(e){
     window.location.href = "../register/register.html"
 }
 
+function goToDashboard(e){
+    e.preventDefault();
+    window.location.href = "../dashboard/dashboard.html"
+}
+
 function watchRegister(e){
     e.preventDefault();
     const form = document.forms.register_form;
