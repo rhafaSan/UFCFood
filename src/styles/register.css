@@ -43,8 +43,12 @@
     color: rgb(148, 26, 148)
 }
 
-.main-body .center-div .button-div button{
+.main-body .center-div .button-div{
     margin-bottom: 2%;
+}
+
+.main-body .center-div .button-div button{
+    margin-bottom: 10px;
     background-color: rgb(22, 74, 185);
     color: #fff;
     border: none;
@@ -57,3 +61,13 @@
     cursor: pointer;
 }
 
+.link-return{
+    text-decoration: none;
+
+}
+.link-return p{
+    color: rgb(45, 99, 218);
+    font-size: 12px !important;
+
+
+}
