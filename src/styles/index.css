@@ -1,11 +1,11 @@
 .main-body{
-    background-color: #a9b3c4;
+    background-color: #9871F5;
     height: 100vh;
     padding-top: 10%;
 }
 
 .center-div{
-    background-color: #e3ecf0;
+    background-color: #F7F7F7;
     /* border: 1px solid #000; */
     border-radius: 10px;
     width: 70%;
@@ -13,6 +13,7 @@
     margin-right: auto;
     margin-left: auto;
     padding: 2%;
+    color: #333;
 }
 
 .center-div p{
@@ -53,26 +54,28 @@
 }
 
 .button-div .login-btn {
-    background-color: #2B2D42;
+    background-color: #04D361;
     color: #fff;
     font-weight: 700;
+    border: none;
     transition: background-color 0.2s;
 }
 
 .button-div .login-btn:hover{
-    background-color: #4d506d;
+    background-color: #04BF58;
     cursor: pointer;
 }
 
 .button-div .register-btn{
-    background-color: #8D99AE;
+    background-color: #774DD6;
     color: #fff;
     font-weight: 700;
+    border: none;
     transition: background-color 0.2s;
 }
 
 .button-div .register-btn:hover{
-    background-color: #5f6979;
+    background-color: #6842C2   ;
     color: #f7f7f7;
     cursor: pointer;
 }

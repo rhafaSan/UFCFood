@@ -11,7 +11,7 @@ function validateLogin(e){
     console.log(password.value);
 
     if(username.value === 'admin' && password.value === 'admin'){
-        window.location.href = "../main/main.html"
+        window.location.href = "../dashboard/dashboard.html"
     } else{
         window.alert('Usuário e/ou senha inválidos')
     }
